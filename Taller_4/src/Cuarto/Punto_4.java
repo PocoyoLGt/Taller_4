@@ -16,14 +16,14 @@ public class Punto_4 {
             System.out.println(" ");
         }
         System.out.println("Segunda Matriz");
-        for (f =0 ; f< 0; f++){
-            for (c = 0 ; c< Matriz[f].length; c++){
+        for (f =0 ; f<= 0; f++){
+            for (c = 0 ; c<= 4; c++){
                 System.out.print(Matriz[f][c] +" " );
             }
             System.out.println(" ");
         }
         for (f =1 ; f<= 1; f++){
-            for (c = 4 ; c<=0; c--){
+            for (c = 4 ; c>=0; c--){
                 System.out.print(Matriz[f][c] +" " );
             }
             System.out.println(" ");
@@ -35,7 +35,7 @@ public class Punto_4 {
             System.out.println(" ");
         }
         for (f =3 ; f<= 3; f++){
-            for (c = 4 ; c<=0; c--){
+            for (c = 4 ; c>=0; c--){
                 System.out.print(Matriz[f][c] +" " );
             }
             System.out.println(" ");

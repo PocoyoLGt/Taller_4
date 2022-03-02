@@ -1,5 +1,6 @@
 package Segundo;
 
+import java.util.HashMap;
 import java.util.Random;
 
 public class Punto_2 {
@@ -8,11 +9,11 @@ public class Punto_2 {
     public void Punto_2(){
         int pares = 0;
         int impares =0;
+        HashMap<Integer, Integer> NumerosPares = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> NumerosImPares = new HashMap<Integer, Integer>();
 
 
         int[] Num = new int[20];
-        int[] Par = new int[pares];
-        int[] ImPar = new int[impares];
 
         System.out.println("Numeros pares e impares");
         for (i = 0; i < Num.length ; i++) {
@@ -20,15 +21,19 @@ public class Punto_2 {
             Num[i] = new Random().nextInt(100);
             System.out.print(Num[i]+" ");
 
+
         }
+        System.out.print("  ");
         for (int i = 0; i < 20;i++) {
             if (Num[i] % 2 == 0) {
-                Par[pares] = Num[i];
+                NumerosPares.put(pares,Num[i]);
+               // Par[pares] = Num[i];
                 pares++;
 
 
             } else {
-                ImPar[impares] = Num[i];
+                NumerosImPares.put(impares,Num[i]);
+                //ImPar[impares] = Num[i];
                 impares++;
 
             }
@@ -36,16 +41,22 @@ public class Punto_2 {
         }
 
         System.out.print("Numeros pares: ");
-        for (int i=0; i < Par.length; i++){
-            System.out.print(Par[i]+" - ");
+        for (int i=0; i < NumerosPares.size(); i++){
 
-        }
+                System.out.print(NumerosPares.get(i)+" - ");
+
+
+
+       }
         System.out.println(" ");
 
         System.out.print("Numeros impares: ");
-        for (int i=0; i < ImPar.length; i++){
-            System.out.print(ImPar[i]+" - ");
-        }
+        for (int i=0; i < NumerosImPares.size(); i++){
+
+                System.out.print(NumerosImPares.get(i)+" - ");
+
+
+       }
         System.out.println(" ");
 
 
